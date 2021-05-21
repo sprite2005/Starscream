@@ -444,7 +444,7 @@ open class WebSocket : NSObject, StreamDelegate, WebSocketClient, WSStreamDelega
     
     private var stream: WSStream
     private var connected = false
-    private var isConnecting = false
+    var isConnecting = false
     private let mutex = NSLock()
     private var compressionState = CompressionState()
     private var writeQueue = OperationQueue()
